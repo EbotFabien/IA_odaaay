@@ -21,7 +21,7 @@ client = OpenAI()
 def get_conversation_chain(documents, query):
     embeddings = OpenAIEmbeddings()
     # Prepare documents for FAISS
-    docs = [Document(page_content=doc["text"], embedding=np.array(doc["embedding"])) for doc in documents]
+    docs = [Document(page_content=doc["text"], embedding=doc["embedding"]) for doc in documents]
 
     # Create a vector store from the documents
     vector_store = FAISS.from_documents(docs,embedding=embeddings)

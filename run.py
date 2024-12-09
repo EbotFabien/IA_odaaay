@@ -78,6 +78,7 @@ def get_response():
         'text':'The searchable text'
     }
     """
+    #done
     data = request.get_json()
     if not data:
         return jsonify({"error": "No data provided"}), 400

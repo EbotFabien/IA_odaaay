@@ -95,7 +95,7 @@ idna==3.10
 importlib_metadata==7.1.0
 importlib_resources==6.4.5
 installer==0.7.0
-ipython==8.24.0
+
 itsdangerous==2.2.0
 jaraco.classes==3.3.1
 jedi==0.19.1
